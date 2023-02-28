@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: a6abdba3b2cdc6f45b00361436e2bdd2
-labels:
-- MI_H2 Top
+guid: c7c1cfaebc4a89346845f7c5309a4170
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

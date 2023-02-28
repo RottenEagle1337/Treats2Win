@@ -1,40 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
+--- !u!114 &-9064903004493828133
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 863483ef683696c4aa122787bf7abd41, type: 3}
-  m_Name: MI_H3 2
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
   m_EditorClassIdentifier: 
-  master: {fileID: 2100000, guid: aa361a1f9b50fe7468b779047e5821ea, type: 2}
-  instance: {fileID: 7986968650215392593}
-  overrides:
-  - name: _hue
-    type: 2
-    isKeyword: 0
-    colorValue: {r: 0, g: 0, b: 0, a: 0}
-    vectorValue: {x: 0, y: 0, z: 0, w: 0}
-    floatValue: 0
-    textureValue: {fileID: 0}
-    active: 0
-  - name: _Diffuse
-    type: 4
-    isKeyword: 0
-    colorValue: {r: 0, g: 0, b: 0, a: 0}
-    vectorValue: {x: 0, y: 0, z: 0, w: 0}
-    floatValue: 0
-    textureValue: {fileID: 2800000, guid: c812f3ce902b93c409b53de3bd1d4877, type: 3}
-    active: 1
---- !u!21 &7986968650215392593
+  version: 5
+--- !u!114 &-8442822231619766737
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
+--- !u!21 &2100000
 Material:
   serializedVersion: 8
-  m_ObjectHideFlags: 8
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
