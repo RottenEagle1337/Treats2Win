@@ -1,17 +1,19 @@
-using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CandySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject prefab;
-    public List<Transform> positions;
+    [SerializeField] private Transform parentPositionsTransform;
+    [SerializeField] private Transform candiesPositionsTransform;
     public Vector2 waveDuration;
     public int minCandyCount;
 
     public bool infMode;
 
     private List<GameObject> candies = new List<GameObject>();
+    private List<Transform> positions;
 
     private float timer;
     private float currentWaveDuration;
@@ -19,14 +21,16 @@ public class CandySpawner : MonoBehaviour
 
     void Start()
     {
-        infMode = SettingsManager.Instance.mode == Mode.Infinity ? true : false;
+        infMode = GameManager.Instance.mode == Mode.Infinity ? true : false;
+
+        positions = parentPositionsTransform.GetComponentsInChildren<Transform>().ToList();
 
         if (!infMode)
         {
             for (int i = 0; i < PlayerController.Instance.candiesForWin; i++)
             {
                 int n = Random.Range(0, positions.Count - 1);
-                Instantiate(prefab, positions[n].position + new Vector3(0f, 0.6f, 0f), Quaternion.Euler(0f, Random.Range(0f, 360f), 0f), transform);
+                Instantiate(prefab, positions[n].position + new Vector3(0f, 0.6f, 0f), Quaternion.Euler(0f, Random.Range(0f, 360f), 0f), candiesPositionsTransform);
                 positions.RemoveAt(n);
             }
         }

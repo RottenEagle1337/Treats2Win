@@ -1,0 +1,158 @@
+.button-style {
+    width: 250px;
+    height: 60px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(176, 118, 102);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    font-size: 36px;
+    transition-duration: 0.2s;
+    position: relative;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+    -unity-text-align: middle-center;
+}
+
+.button-style:hover {
+    width: 260px;
+    height: 65px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(149, 89, 72);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    font-size: 36px;
+    transition-duration: 0.1s;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+    -unity-text-align: middle-center;
+}
+
+.button-style:active {
+    width: 245px;
+    height: 55px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(130, 75, 59);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    font-size: 36px;
+    transition-duration: 0s;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+    -unity-text-align: middle-center;
+}
+
+.ModeButton {
+    position: absolute;
+    bottom: auto;
+    left: 5px;
+    width: 140px;
+    height: 140px;
+    font-size: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(176, 118, 102);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+    -unity-text-align: middle-center;
+    transition-duration: 0.2s;
+}
+
+.ModeButton:hover {
+    position: absolute;
+    bottom: auto;
+    left: 5px;
+    width: 145px;
+    height: 145px;
+    font-size: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(149, 89, 72);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+    -unity-text-align: middle-center;
+    transition-duration: 0.1s;
+}
+
+.ModeButton:active {
+    position: absolute;
+    bottom: auto;
+    left: 5px;
+    width: 135px;
+    height: 135px;
+    font-size: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(130, 75, 59);
+    border-left-color: rgb(91, 50, 38);
+    border-right-color: rgb(91, 50, 38);
+    border-top-color: rgb(91, 50, 38);
+    border-bottom-color: rgb(91, 50, 38);
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 10px;
+    -unity-text-align: middle-center;
+    -unity-font: url('project://database/Assets/UI/Fonts/jupiterc.ttf?fileID=12800000&guid=e5aeab9410d8caf468ee630f23077507&type=3#jupiterc');
+    -unity-font-definition: none;
+}

@@ -51,18 +51,11 @@ public class BulletSpammer : MonoBehaviour
 
                 BulletCollider bulletData = bullet.GetComponent<BulletCollider>();
                 bulletData.SetSpeed(waves[i].speed);
-                //bulletData.SelLoopLength(waves[i].trajectoryLoopLength);
                 bulletData.SetCurve(waves[i].trajectory);
 
                 angle += (360 / waves[i].quantity);
             }
             yield return new WaitForSeconds(waveCooldown);
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        //Gizmos.color = Color.red;
-        //Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

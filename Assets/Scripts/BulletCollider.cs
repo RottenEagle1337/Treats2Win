@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BulletCollider : MonoBehaviour
 {
+    public static Action OnPlayerHitted;
+
     public Material[] options;
     private Renderer planeRenderer;
 
@@ -22,7 +22,7 @@ public class BulletCollider : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         planeRenderer = GetComponentInChildren<Renderer>();
-        planeRenderer.material = options[Random.Range(0, options.Length)];
+        planeRenderer.material = options[UnityEngine.Random.Range(0, options.Length)];
     }
 
     public void SetSpeed(float _speed)
@@ -53,15 +53,11 @@ public class BulletCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Bullet")
-        {
-            PlayerController target = other.GetComponent<PlayerController>();
-            if (target != null)
-            {
-                target.Hitted();
-            }
-
-            Destroy(gameObject);
-        }
+        if (other.CompareTag("Bullet"))
+            return;
+        else if (other.CompareTag("Player"))
+            OnPlayerHitted.Invoke();
+        Destroy(gameObject);
     }
+
 }
